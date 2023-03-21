@@ -11,6 +11,8 @@
 		FB622E2829CA077700E82E62 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB622E2729CA077700E82E62 /* ContentView.swift */; };
 		FB622E2A29CA077800E82E62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB622E2929CA077800E82E62 /* Assets.xcassets */; };
 		FB622E2D29CA077800E82E62 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB622E2C29CA077800E82E62 /* Preview Assets.xcassets */; };
+		FB622E3529CA07AD00E82E62 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = FB622E3429CA07AD00E82E62 /* Alamofire */; };
+		FB622E3729CA07C600E82E62 /* BitlyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB622E3629CA07C600E82E62 /* BitlyViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,7 @@
 		FB622E2729CA077700E82E62 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FB622E2929CA077800E82E62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB622E2C29CA077800E82E62 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FB622E3629CA07C600E82E62 /* BitlyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitlyViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB622E3529CA07AD00E82E62 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,6 +59,7 @@
 				FB622E2729CA077700E82E62 /* ContentView.swift */,
 				FB622E2929CA077800E82E62 /* Assets.xcassets */,
 				FB622E2B29CA077800E82E62 /* Preview Content */,
+				FB622E3629CA07C600E82E62 /* BitlyViewModel.swift */,
 			);
 			path = shortenswift;
 			sourceTree = "<group>";
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = shortenswift;
+			packageProductDependencies = (
+				FB622E3429CA07AD00E82E62 /* Alamofire */,
+			);
 			productName = shortenswift;
 			productReference = FB622E2229CA077700E82E62 /* shortenswift.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = FB622E1929CA077700E82E62;
+			packageReferences = (
+				FB622E3329CA07AD00E82E62 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = FB622E2329CA077700E82E62 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB622E3729CA07C600E82E62 /* BitlyViewModel.swift in Sources */,
 				FB622E2829CA077700E82E62 /* ContentView.swift in Sources */,
 				FB622E2629CA077700E82E62 /* shortenswiftApp.swift in Sources */,
 			);
@@ -339,6 +351,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FB622E3329CA07AD00E82E62 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FB622E3429CA07AD00E82E62 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FB622E3329CA07AD00E82E62 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FB622E1A29CA077700E82E62 /* Project object */;
 }
